@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./Css/style.css">
+
+    <!-- custom js -->
+    <script src="./js/main.js" defer></script>
+
+    <!-- confetti js link -->
+    <script src="./js/confetti.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="can">
+    <canvas class="confetti" id="canvas"></canvas>
+  </div>
+  
+  <main>
+    <div class="container">
+      <div class="form">
+        <!-- Day start -->
+        <div class="form-group">
+          <label for="day">DAY</label>
+          <input type="text" id="day" name="day" placeholder="DD">
+          <span class="error day-error"></span>
+        </div>
+        <!-- Month start -->
+        <div class="form-group">
+          <label for="day">MONTH </label>
+          <input type="text" id="month" name="month" placeholder="MM">
+          <span class="error month-error"></span>
+        </div>
+        <!-- Year start -->
+        <div class="form-group">
+          <label for="day">YEAR </label>
+          <input type="text" id="year" name="year" placeholder="YYYY">
+          <span class="error year-error"></span>
+        </div>
+      </div>
+      <!-- btn start -->
+      <div class="btn">
+        <img src="/assets/images/icon-arrow.svg" alt="">
+        <span></span>
+      </div>
+      <!-- Result start -->
+      <div class="result">
+        <h1><span class="year-result">- -</span>years</h1>
+        <h1><span class="month-result">- -</span>months</h1>
+        <h1><span class="day-result">- -</span> days</h1>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
